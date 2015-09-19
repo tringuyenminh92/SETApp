@@ -1,0 +1,19 @@
+﻿
+<ons-toolbar>
+    <div class="left navigation-bar__title">
+        SET
+    </div>
+
+    <div class="right navigation-bar__title">
+        <img src="app/images/Bosch_Rexroth_Logo.gif" style="max-height:35px;" />
+        <!--<ons-toolbar-button class="menu-icon-style" onclick="myNavigator.pushPage('app/views/account.html', { animation: 'slide' })">
+            <ons-icon icon="ion-person"></ons-icon>
+        </ons-toolbar-button>
+        <ons-toolbar-button class="menu-icon-style">
+            <ons-icon icon="ion-help-circled"></ons-icon>
+        </ons-toolbar-button>-->
+        <!--<ons-toolbar-button class="menu-icon-style">
+            <ons-icon icon="ion-search"></ons-icon>
+        </ons-toolbar-button>-->
+    </div>
+</ons-toolbar>

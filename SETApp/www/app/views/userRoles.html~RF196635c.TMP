@@ -1,0 +1,92 @@
+﻿
+<ons-page>
+
+    <!-- top menu -->
+    <div ng-include="'app/views/bannerMenu.html'"></div>
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Edit specific roles</div>
+    </ons-toolbar>
+
+    <div class="navigation-bar">
+        <div class="navigation-bar__center"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Edit specific roles</div>
+
+        <div class="navigation-bar__center" style="width:85% !important;  max-width:90% !important;">
+            <input type="search" class="search-input" style="margin-top: 6px; margin-bottom: 6px; margin-left: 6px;" placeholder="Search Users">
+        </div>
+        <div class="navigation-bar__right" style="width:15% !important;  max-width: 20% !important;">
+            <ons-toolbar-button>
+                <ons-icon icon="ion-plus" style="font-size: 32px; width: 1em" />
+            </ons-toolbar-button>
+        </div>
+    </div>
+
+
+    <ons-list modifier="inset" class="settings-list">
+        <ons-list-header>Specific roles for Amit Kumar</ons-list-header>
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" checked="checked">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                RFQ Owner
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                Salesman
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" checked="checked">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                Cost Approver
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" checked="checked">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                CTG Approver
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                Additional Sell Price Approver
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" >
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                CTG Constant Admin
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" >
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                Manufacturing
+            </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+            <label class="checkbox checkbox--list-item">
+                <input type="checkbox" checked="checked">
+                <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+                Task Coordinator
+            </label>
+        </ons-list-item>
+
+</ons-page>

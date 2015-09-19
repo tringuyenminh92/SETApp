@@ -1,0 +1,51 @@
+﻿
+<ons-page>
+
+    <!-- top menu -->
+    <div ng-include="'app/views/bannerMenu.html'"></div>
+
+    <div class="settings-header">Personal Information</div>
+    <ons-list modifier="inset" class="settings-list">
+
+        <ons-list-item>
+
+            <ons-list-item>
+                <ons-icon icon="ion-email">Tri.NguyenMinh2@vn.bosch.com</ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+        <ons-list-item>
+            <ons-list-item>
+                <ons-icon icon="ion-ios-telephone">+84(8)38128-000</ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+
+    </ons-list>
+
+    <div class="settings-header">Admin Contact Information</div>
+    <ons-list modifier="inset" class="settings-list">
+
+        <ons-list-item>
+
+            <ons-list-item modifier="tappable">
+                <ons-icon icon="ion-email">   kenneth.grundstein@boschrexroth-us.com </ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+        <ons-list-item>
+            <ons-list-item modifier="tappable">
+                <ons-icon icon="ion-ios-telephone">(610)417-1184</ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+    </ons-list>
+
+    <br />
+    <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="tappable">
+            <ons-icon icon="ion-log-out">Sign out</ons-icon>
+        </ons-list-item>
+    </ons-list>
+
+</ons-page>

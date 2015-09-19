@@ -1,0 +1,26 @@
+﻿
+<ons-page>
+
+    <!-- top menu -->
+    <div ng-include="'app/views/bannerMenu.html'"></div>
+
+    <div class="settings-header">Personal Information</div>
+    <ons-list modifier="inset" class="settings-list">
+
+        <ons-list-item>
+
+            <ons-list-item>
+                <ons-icon icon="ion-email">Tri.NguyenMinh2@vn.bosch.com</ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+        <ons-list-item>
+            <ons-list-item>
+                <ons-icon icon="ion-ios-telephone">+84(8)38128-000</ons-icon>
+            </ons-list-item>
+        </ons-list-item>
+
+
+    </ons-list>
+
+</ons-page>

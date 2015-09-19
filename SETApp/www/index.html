@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html ng-app="GlobalModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>System Estimating Tool</title>
+
+    <!-- AppPractice references -->
+    <link href="app/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+
+    <link href="app/css/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="app/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="app/css/lib/onsen/onsenui.css" rel="stylesheet" />
+    <link href="app/css/lib/onsen/onsen-css-components.css" rel="stylesheet" />
+    <link href="app/css/lib/onsen/onsen-css-components-blue-basic-theme.css" rel="stylesheet" />
+
+    <link href="app/css/details.css" rel="stylesheet" />
+    <link href="app/css/layoutStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <ons-navigator var="myNavigator">
+        
+        <!-- bottom menu bar -->
+        <ons-tabbar animation="fade">
+            <ons-tab page="app/views/quote.html" label="QUOTES" icon="ion-social-usd" active="true"></ons-tab>
+            <ons-tab page="app/views/reports.html" label="REPORTS" icon="ion-navicon-round"></ons-tab>
+            <ons-tab page="app/views/configurations.html" label="CONFIGURATION" icon="ion-ios-list-outline"></ons-tab>
+            <ons-tab page="app/views/admin.html" label="ADMIN" icon="ion-locked"></ons-tab>
+            <ons-tab page="app/views/account.html" label="INFO" icon="ion-person"></ons-tab>
+        </ons-tabbar>
+
+    </ons-navigator>
+
+
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="app/scripts/index.js"></script>
+    <script src="app/scripts/platformOverrides.js"></script>
+
+    <script src="app/scripts/lib/angular/angular.min.js"></script>
+
+    <!-- load jquery after angular to fix:
+    Onsen UI require jqLite. Load jQuery after loading AngularJS to fix this error.
+    jQuery may break Onsen UI behavior. -->
+    <script src="app/scripts/lib/jquery/jquery.min.js"></script>
+
+    <script src="app/scripts/lib/angular/angular-route.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-sanitize.min.js"></script>
+    <script src="app/scripts/lib/angular/angular-animate.js"></script>
+    <script src="app/scripts/lib/angular/angular-touch.min.js"></script>
+
+    <script src="app/scripts/lib/onsen/onsenui.min.js"></script>
+
+    <script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="app/scripts/lib/bootstrap/bootstrap-typeahead.min.js"></script>
+
+    <script src="app/scripts/lib/Custom/MyApp.js"></script>
+</body>
+</html>
