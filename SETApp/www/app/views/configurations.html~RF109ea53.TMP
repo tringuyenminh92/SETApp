@@ -1,9 +1,0 @@
-﻿<ons-navigator var="cartNavigator">
-    <ons-page>
-        <ons-toolbar>
-            <div class="center">Shopping Cart</div>
-        </ons-toolbar>
-
-    </ons-page>
-</ons-navigator>
-
