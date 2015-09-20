@@ -1,0 +1,33 @@
+﻿<ons-page>
+    
+    <!-- top menu -->
+    <div ng-include="'app/views/bannerMenu.html'"></div>
+
+    <div class="navigation-bar">
+        <div class="navigation-bar__left"><ons-back-button></ons-back-button></div>
+        <div class="navigation-bar__center">
+            New User
+        </div>
+    </div>
+
+    <div class="formarea">
+        <div class="form-row">
+            <input type="text" class="text-input--underbar width-half" placeholder="Domain*" value="">
+            <input type="text" class="text-input--underbar width-half" placeholder="NTID" value="" style="border-width-left: 1px">
+        </div>
+
+        <div class="form-row">
+            <input type="text" class="text-input--underbar width-half" placeholder="First Name" value="">
+            <input type="text" class="text-input--underbar width-half" placeholder="Last Name" value="" style="border-width-left: 1px">
+        </div>
+
+        <div class="lucent">
+            <p class="note">Please enter NTID or Firt name</p>
+        </div>
+
+        <div class="vspc form-row">
+            <ons-button modifier="large--cta">Search</ons-button>
+        </div>
+    </div>
+
+</ons-page>
