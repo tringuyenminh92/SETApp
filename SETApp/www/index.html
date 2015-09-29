@@ -13,7 +13,7 @@
     <link href="app/css/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
 
     <link href="app/css/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="app/css/lib/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="app/css/lib/font_awesome/css/font-awesome.min.css" rel="stylesheet" />
 
     <link href="app/css/lib/onsen/onsenui.css" rel="stylesheet" />
     <link href="app/css/lib/onsen/onsen-css-components.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
 <body>
 
     <ons-navigator var="myNavigator">
-        
+
         <!-- bottom menu bar -->
         <ons-tabbar animation="fade">
             <ons-tab page="app/views/Quote/quote.html" label="QUOTES" icon="ion-social-usd" active="true"></ons-tab>
@@ -34,6 +34,13 @@
             <ons-tab page="app/views/Admin/admin.html" label="ADMIN" icon="ion-locked"></ons-tab>
             <ons-tab page="app/views/Help/account.html" label="INFO" icon="ion-person"></ons-tab>
         </ons-tabbar>
+
+        <!-- modal view for waiting message and freeze screen -->
+        <ons-modal var="waitingModal">
+            <ons-icon icon="ion-load-c" spin="true"></ons-icon>
+            <br />
+            In Process...
+        </ons-modal>
 
     </ons-navigator>
 
@@ -61,6 +68,9 @@
     <script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
     <script src="app/scripts/lib/bootstrap/bootstrap-typeahead.min.js"></script>
 
+    <!-- custom script for handle client side -->
     <script src="app/scripts/lib/Custom/MyApp.js"></script>
+    <script src="app/scripts/lib/Custom/quoteController.js"></script>
+
 </body>
 </html>

@@ -1,106 +1,52 @@
 ﻿
-
-<ons-page style="background: none">
-
+<ons-page ng-controller="quoteController">
     <!-- top menu -->
     <div ng-include="'app/views/bannerMenu.html'"></div>
-
     <!-- Banner -->
     <div>
         <img src="app/images/banner.jpg" class="bannerStyle" />
         <div class="card-desc">COVER YOUR ANKLES</div>
     </div>
 
-    <!-- List carousel scroll -->
-    <ons-list>
-        <ons-list-item class="list-item-carousel-style">
+    <!-- List Quotes -->
+    <ons-list class="plan-list">
 
-            <ons-row>
-                <ons-scroller style="height: 65px;">
-                    <ons-carousel swipeable overscrollable auto-scroll fullscreen item-width="120px" direction="horizontal" var="carousel" initial-index="0">
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Coats & outerwear</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Dresses</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Bottoms</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Coats & outerwear</ons-carousel-item-cover>
-                        </ons-carousel-item>
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Coats & outerwear</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Dresses</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Bottoms</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-                        <ons-carousel-item>
-                            <img src="app/images/falljacket.jpg" class="image-item-carousel" />
-                            <ons-carousel-item-cover class="cover-label-carousel">Coats & outerwear</ons-carousel-item-cover>
-                        </ons-carousel-item>
-
-
-                    </ons-carousel>
-                </ons-scroller>
-            </ons-row>
+        <ons-list-item class="plan" ng-repeat="a in [1,2,3,4,5,6,7,8,9,10]">
+            <ons-gesture-detector ng-doubletap="showActionsToSelectedQuote($event)">
+                <ons-row>
+                    <ons-col class="plan-left">
+                        <div class="plan-date"> RBEI/BSW </div>
+                        <div class="plan-duration">US\dzieger</div>
+                    </ons-col>
+                    <ons-col width="6px" class="plan-center" ng-style="{backgroundColor:a % 2 == 1 ? '#3399ff' : '#ccc'}">
+                    </ons-col>
+                    <ons-col class="plan-right">
+                        <div class="plan-name"> Christian Langenstein</div>
+                        <div class="plan-info">
+                            <div ng-hide="">
+                                <ons-icon icon="ion-ios-telephone"></ons-icon>+1(610)694-2415
+                            </div>
+                            <div ng-hide="">
+                                Tri.NguyenMinh2@vn.bosch.com
+                            </div>
+                        </div>
+                    </ons-col>
+                </ons-row>
+            </ons-gesture-detector>
         </ons-list-item>
     </ons-list>
 
-    <!-- List category and sale on -->
-    <ons-list style="margin-top: 12px;">
-        <ons-list-item class="noPadding">
-            <img src="app/images/falljacket.jpg" class="lookbookImageStyle" />
-            <ons-carousel-item-cover class="cover-label">FALL JACKETS</ons-carousel-item-cover>
-        </ons-list-item>
 
-        <ons-list-item class="noPadding">
-            <img src="app/images/nextSeason.jpg" class="lookbookImageStyle" />
-            <ons-carousel-item-cover class="cover-label">NEXT SEASON'S ESSENTIALS</ons-carousel-item-cover>
-        </ons-list-item>
 
-        <ons-list-item class="noPadding">
-            <img src="app/images/burton.jpg" class="lookbookImageStyle" />
-            <ons-carousel-item-cover class="cover-label">
-                BURTON X JT EXCLUSIVE COLLABORATION
-            </ons-carousel-item-cover>
-        </ons-list-item>
+    <ons-template id="quoteNavigationOptions.html">
+        <ons-popover cancelable direction="down">
+            <ons-list>
+                <ons-list-item ng-repeat="option in options" modifier="tappable">
+                    {{ option }}
+                </ons-list-item>
+            </ons-list>
+        </ons-popover>
+    </ons-template>
 
-        <ons-list-item class="noPadding">
-            <img src="app/images/getthebest.jpg" class="lookbookImageStyle" />
-            <ons-carousel-item-cover class="cover-label">GET THE BEST OF THE BEST</ons-carousel-item-cover>
-        </ons-list-item>
-
-        <ons-list-item class="noPadding">
-            <img src="app/images/upto50.jpg" class="lookbookImageBiggerStyle" />
-            <div class="card-desc">OUR BEST BRANDS ARE FINALLY ON SALE</div>
-        </ons-list-item>
-
-        <ons-list-item class="noPadding">
-            <img src="app/images/onsale.jpg" class="lookbookImageBiggerStyle" />
-            <div class="card-desc">EXTRA 25% OFF</div>
-        </ons-list-item>
-
-    </ons-list>
 
 </ons-page>

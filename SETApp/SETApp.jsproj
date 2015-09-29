@@ -120,8 +120,8 @@
     <Content Include="www\app\css\lib\bootstrap\bootstrap.css" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap.css.map" />
     <Content Include="www\app\css\lib\bootstrap\bootstrap.min.css" />
-    <Content Include="www\app\css\lib\font-awesome\font-awesome.css" />
-    <Content Include="www\app\css\lib\font-awesome\font-awesome.min.css" />
+    <Content Include="www\app\css\lib\font_awesome\css\font-awesome.css" />
+    <Content Include="www\app\css\lib\font_awesome\css\font-awesome.min.css" />
     <Content Include="www\app\css\lib\fonts\fontawesome-webfont.eot" />
     <Content Include="www\app\css\lib\fonts\fontawesome-webfont.svg" />
     <Content Include="www\app\css\lib\fonts\fontawesome-webfont.ttf" />
@@ -131,6 +131,11 @@
     <Content Include="www\app\css\lib\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="www\app\css\lib\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="www\app\css\lib\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="www\app\css\lib\font_awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="www\app\css\lib\font_awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="www\app\css\lib\font_awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="www\app\css\lib\font_awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="www\app\css\lib\font_awesome\fonts\FontAwesome.otf" />
     <Content Include="www\app\css\lib\ionicons\css\ionicons.css" />
     <Content Include="www\app\css\lib\ionicons\css\ionicons.min.css" />
     <Content Include="www\app\css\lib\ionicons\fonts\ionicons.eot" />
@@ -198,6 +203,7 @@
     <Content Include="www\app\scripts\lib\bootstrap\bootstrap.js" />
     <Content Include="www\app\scripts\lib\bootstrap\bootstrap.min.js" />
     <Content Include="www\app\scripts\lib\Custom\MyApp.js" />
+    <Content Include="www\app\scripts\lib\Custom\quoteController.js" />
     <Content Include="www\app\scripts\lib\jquery\jquery.js" />
     <Content Include="www\app\scripts\lib\jquery\jquery.min.js" />
     <Content Include="www\app\scripts\lib\jquery\jquery.min.map" />
