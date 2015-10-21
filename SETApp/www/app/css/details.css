@@ -193,3 +193,11 @@ a, a:hover, a:focus {
 
 
 /*login form*/
+
+
+/*.page__background {
+    background-image: url(../images/backgroundLogin.jpg);
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    background-size: cover;
+}*/

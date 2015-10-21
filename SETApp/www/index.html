@@ -26,8 +26,7 @@
 <body>
 
     <ons-navigator var="myNavigator" ng-controller="mainController">
-
-        <div class="formarea">
+        <div class="formarea" ng-init="initBackground()">
             <div class="form-top">
                 <div class="form-top-left">
                     <h3>Login to SETi</h3>
@@ -49,11 +48,10 @@
                         <label class="sr-only" for="form-password">Password</label>
                         <input type="password" name="form-password" placeholder="Password..." class="form-password form-control">
                     </div>
-                    <button type="submit" class="btn btn-success btn-lg">Sign in</button>
+                    <button type="submit" class="btn btn-success btn-lg" ng-click="login()">Sign in</button>
                 </form>
             </div>
         </div>
-
 
         <!-- bottom menu bar -->
         <ons-tabbar animation="fade" ng-if="isLogged==true">

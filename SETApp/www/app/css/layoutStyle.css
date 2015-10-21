@@ -157,8 +157,10 @@ ons-carousel-item {
         background-color: rgba(0,0,0,0.05);
         color: rgba(0,0,0,0.4);
         border: 1px solid rgba(0,0,0,0.2);
+        -ms-opacity: 1;
         opacity: 1;
     }
+
 /*End*/
 
 
@@ -172,8 +174,9 @@ ons-carousel-item {
 .profile-image {
     width: 50px;
     height: 50px;
-    border-radius: 4px;
+    -ms-border-radius: 4px;
     -webkit-border-radius: 4px;
+    border-radius: 4px;
     border: inset 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -184,18 +187,20 @@ ons-carousel-item {
 
 .profile-email {
     font-size: 15px;
+    -ms-opacity: 0.4;
     opacity: 0.4;
 }
 
 .switch--list-item {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .settings-header {
     font-weight: 500;
     font-size: 14px;
+    -ms-opacity: 0.4;
     opacity: 0.4;
-    padding: 10px 0 0px 10px;
+    padding: 10px 0 0 10px;
     margin-bottom: -4px;
 }
 
@@ -226,6 +231,7 @@ ons-carousel-item {
 
 .plan-center {
     background-color: #3399ff;
+    -ms-opacity: 0.5;
     opacity: 0.5;
 }
 
@@ -235,6 +241,7 @@ ons-carousel-item {
 
 .plan-date {
     font-size: 11px;
+    -ms-opacity: 0.8;
     opacity: 0.8;
     margin-bottom: 4px;
     font-weight: 600;
@@ -242,6 +249,7 @@ ons-carousel-item {
 
 .plan-duration {
     font-size: 9px;
+    -ms-opacity: 0.8;
     opacity: 0.8;
 }
 
@@ -275,7 +283,8 @@ ons-carousel-item {
 }
 
 .lucent {
-  opacity: 0.4;
+    -ms-opacity: 0.4;
+    opacity: 0.4;
 }
 
 .note {
