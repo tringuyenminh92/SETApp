@@ -21,25 +21,54 @@
 
     <link href="app/css/details.css" rel="stylesheet" />
     <link href="app/css/layoutStyle.css" rel="stylesheet" />
+    <link href="app/css/style.css" rel="stylesheet" />
 </head>
 <body>
 
-    <ons-navigator var="myNavigator">
+    <ons-navigator var="myNavigator" ng-controller="mainController">
+
+        <div class="formarea">
+            <div class="form-top">
+                <div class="form-top-left">
+                    <h3>Login to SETi</h3>
+                    <p class="text-muted">
+                        Register account by web browser on <a href="http://www.intranet.bosch.com/app/SET/">SETi</a>
+                    </p>
+                </div>
+                <div class="form-top-right">
+                    <i class="fa fa-key"></i>
+                </div>
+            </div>
+            <div class="form-bottom">
+                <form role="form" action="" method="post" class="login-form">
+                    <div class="form-group">
+                        <label class="sr-only" for="form-username">Username</label>
+                        <input type="text" name="form-username" placeholder="Username..." class="form-username form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="form-password">Password</label>
+                        <input type="password" name="form-password" placeholder="Password..." class="form-password form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg">Sign in</button>
+                </form>
+            </div>
+        </div>
+
 
         <!-- bottom menu bar -->
-        <ons-tabbar animation="fade">
+        <ons-tabbar animation="fade" ng-if="isLogged==true">
             <ons-tab page="app/views/Quote/quote.html" label="QUOTES" icon="ion-social-usd" active="true"></ons-tab>
             <ons-tab page="app/views/Report/reports.html" label="REPORTS" icon="ion-navicon-round"></ons-tab>
             <ons-tab page="app/views/Configuration/configurations.html" label="CONFIGURATION" icon="ion-ios-list-outline"></ons-tab>
             <ons-tab page="app/views/Admin/admin.html" label="ADMIN" icon="ion-locked"></ons-tab>
             <ons-tab page="app/views/Help/account.html" label="INFO" icon="ion-person"></ons-tab>
         </ons-tabbar>
-
         <!-- modal view for waiting message and freeze screen -->
         <ons-modal var="waitingModal">
-            <ons-icon icon="ion-load-c" spin="true"></ons-icon>
-            <br />
-            In Process...
+            <!--<ons-icon icon="ion-load-c" spin="true"></ons-icon>
+            <br/>
+            In Process...-->
+            <ons-progress type="circular" indeterminate></ons-progress>
         </ons-modal>
 
     </ons-navigator>
@@ -68,8 +97,11 @@
     <script src="app/scripts/lib/bootstrap/bootstrap.min.js"></script>
     <script src="app/scripts/lib/bootstrap/bootstrap-typeahead.min.js"></script>
 
+    <script src="app/scripts/lib/backstretch/jquery.backstretch.min.js"></script>
+
     <!-- custom script for handle client side -->
     <script src="app/scripts/lib/Custom/MyApp.js"></script>
+    <script src="app/scripts/lib/Custom/mainController.js"></script>
     <script src="app/scripts/lib/Custom/quoteController.js"></script>
 
 </body>

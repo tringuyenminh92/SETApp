@@ -7,7 +7,7 @@
         <img src="app/images/banner.jpg" class="bannerStyle" />
         <div class="card-desc">COVER YOUR ANKLES</div>
     </div>
-
+    
     <!-- List Quotes -->
     <ons-list class="plan-list">
 
@@ -36,6 +36,13 @@
         </ons-list-item>
     </ons-list>
 
+    <!-- modal view for waiting message and freeze screen -->
+    <ons-modal var="waitingModal">
+        <!--<ons-icon icon="ion-load-c" spin="true"></ons-icon>
+        <br />
+        In Process...-->
+        <ons-progress type="circular" indeterminate></ons-progress>
+    </ons-modal>
 
 
     <ons-template id="quoteNavigationOptions.html">

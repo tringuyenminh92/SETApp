@@ -19,10 +19,11 @@
 
     "use strict";
 
-     angular.module('GlobalModule', ['onsen', 'ngAnimate', 'ngRoute', 'ngSanitize', 'ngTouch']);
+    angular.module('GlobalModule', ['onsen', 'ngAnimate', 'ngRoute', 'ngSanitize', 'ngTouch']);
 
     angular.module("GlobalModule").factory("shareService", shareService);
 
+   
 })();
 
 
